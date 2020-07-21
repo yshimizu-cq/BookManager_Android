@@ -13,10 +13,14 @@
             android:name=".LoginActivity"
             android:label="@string/login_label">
             <intent-filter>
+                <!-- ルートActivityに明示 -->
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/create_account_label">
         </activity>
     </application>
 
