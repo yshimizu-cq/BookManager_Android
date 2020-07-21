@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/focusView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="24dp"
     android:layout_marginRight="24dp"
-    tools:context=".MainActivity">
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".LoginActivity">
 
     <TextView
+        android:id="@+id/emailTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="メールアドレス"
+        android:text="@string/email_label"
+        android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@id/emailEditView" />
 
     <EditText
         android:id="@+id/emailEditView"
         android:layout_width="match_parent"
-        android:layout_marginBottom="20dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@id/passwordTextView" />
 
     <TextView
         android:id="@+id/passwordTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="パスワード"
+        android:text="@string/password_label"
+        android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@id/passwordEditView" />
 
     <EditText
@@ -39,14 +44,20 @@
     <Button
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="48dp"
         android:layout_marginTop="24dp"
+        android:background="@drawable/button_design"
+        android:text="@string/login_label"
+        android:textColor="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@id/passwordEditView" />
 
     <Button
-        android:layout_width="200dp"
+        android:layout_width="160dp"
         android:layout_height="40dp"
         android:layout_marginTop="60dp"
+        android:background="@drawable/button_design"
+        android:text="@string/signup_label"
+        android:textColor="#FFFFFF"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/loginButton" />
 

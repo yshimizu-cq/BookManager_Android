@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BookManager-Android</string>
+    <string name="login_label">ログイン</string>
+    <string name="signup_label">新規作成</string>
+    <string name="email_label">メールアドレス</string>
+    <string name="password_label">パスワード</string>
 </resources>
