@@ -6,4 +6,6 @@
     <string name="password_label">パスワード</string>
     <string name="passwordConfirmation_label">パスワード確認</string>
     <string name="create_account_label">アカウント設定</string>
+    <string name="save_action_bar_button">保存</string>
+    <string name="add_action_bar_button">追加</string>
 </resources>

@@ -12,6 +12,8 @@
     android:focusableInTouchMode="true"
     tools:context=".LoginActivity">
 
+
+
     <TextView
         android:id="@+id/emailTextView"
         android:layout_width="match_parent"
